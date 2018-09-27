@@ -38,27 +38,27 @@ void sort(std::vector<float>&);
 std::string replace(const std::string& str, const std::string& old, const std::string& new);
 ```
 Пример:
-```
+```cpp
 std::string newString = replace("Can you can a can as a canner can can a can?", "can", "cAN");
 std::cout << newString; // "Can you cAN a cAN as a cANner cAN cAN a cAN?"
 ```
 
 1. Необходимо реализовать функцию, которая делит строку по задонному символу.
-```
+```cpp
 std::vector<std::string> split(const std::string&, char sep = ' ');
 ```
 Пример:
-```
+```cpp
 std::vector<std::string> arr = split("Can you can a can as a canner can can a can?", ' ');
 // arr == {"Can", "you", "can", "a", "can", "as", "a", "canner", "can", "can", "a", "can?"};
 ```
 
 1. Необходимо реализовать функцию, которая соединяет массив строк в одну строку.
-```
-std::string join(const std::vector<std::string>&, const std::string sep);
+```cpp
+std::string join(const std::vector<std::string>&, const std::string& sep);
 ```
 Пример:
-```
+```cpp
 std::vector<std::string> arr = {"Can", "you", "can", "a", "can", "as", "a", "canner", "can", "can", "a", "can?"};
 std::string str = join(arr, " ");
 // str == "Can you can a can as a canner can can a can?"
